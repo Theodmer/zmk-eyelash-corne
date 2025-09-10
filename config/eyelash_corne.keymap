@@ -22,7 +22,6 @@
 #define MO_TOG(layer) &mo_tog layer layer
 #define AA(keycode) &ht_tp RA(keycode) keycode
 #define CTRL(keycode) &ht_tp LG(keycode) LC(keycode)
-//======definitions========//
 
 //=========================//=========================/ Version: 2 /=========================//=========================//
 
@@ -259,10 +258,10 @@
         control_layer {
             display-name = "CONTROL";
             bindings = <
-   &to QWERTY  &none  &kp LC(LEFT)  &kp UP    &kp LC(RIGHT)  &tdbt                       &kp C_VOL_UP          &bt BT_CLR &kp C_BRI_DEC  &kp C_VOL_UP  &none         &kp C_BRI_INC  &to GRA
-   &kp LSHFT   &none  &kp LEFT      &kp DOWN  &kp RIGHT      &none            &kp C_PREV &kp C_PP  &kp C_NEXT  &none      &kp C_PREV     &kp C_PP      &kp C_NEXT    &none          &tog QWERTY
-   &kp LALT    &none  &none         &none     &none          &none     &rgb_ug RGB_TOG   &kp C_VOL_DN          &none      &none          &kp C_VOL_DN  &none         &none          &mt RSFT RET
-                                    &kp LCTRL &none          &trans                                            &trans     &none          &trans
+   &to QWERTY  &none  &kp LC(LEFT)  &kp UP    &kp LC(RIGHT)  &tdbt                                &rgb_ug RGB_HUI                  &bt BT_CLR &kp C_BRI_DEC  &kp C_VOL_UP  &none         &kp C_BRI_INC  &to GRA
+   &kp LSHFT   &none  &kp LEFT      &kp DOWN  &kp RIGHT      &none                &rgb_ug RGB_SPD &rgb_ug RGB_EFF &rgb_ug RGB_SPI  &none      &kp C_PREV     &kp C_PP      &kp C_NEXT    &none          &tog QWERTY
+   &kp LALT    &none  &none         &none     &none          &none     &rgb_ug RGB_TOG            &rgb_ug RGB_HUD                  &none      &none          &kp C_VOL_DN  &none         &none          &mt RSFT RET
+                                    &kp LCTRL &none          &trans                                                                &trans     &none          &trans
             >;
 
             sensor-bindings = <&rgb_encoder>;
