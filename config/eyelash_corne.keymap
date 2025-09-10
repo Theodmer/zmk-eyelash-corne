@@ -23,7 +23,7 @@
 #define CTRL(keycode) &ht_tp LG(keycode) LC(keycode)
 //======definitions========//
 
-//=========================//=========================/ Version: 1 /=========================//=========================//
+//=========================//=========================/ Version: 2 /=========================//=========================//
 
 / {
     conditional_layers {
@@ -62,6 +62,59 @@
 };
 
 &soft_off { hold-time-ms = <2000>; };
+
+//==================== COMBOS ====================//
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+        combo_dot {
+            timeout-ms = <50>;
+            key-positions = <17 18>;
+            bindings = <&kp DOT>;
+        };
+        combo_comma {
+            timeout-ms = <50>;
+            key-positions = <24 25>;
+            bindings = <&kp COMMA>;
+        };
+        combo_minus {
+            timeout-ms = <50>;
+            key-positions = <16 17>;
+            bindings = <&kp MINUS>;
+        };
+        combo_underscore {
+            timeout-ms = <50>;
+            key-positions = <31 32>;
+            bindings = <&kp UNDER>;
+        };
+        combo_cut {
+            timeout-ms = <50>;
+            key-positions = <37 38>;
+            bindings = <&kp LC(X)>;
+        };
+        combo_copy {
+            timeout-ms = <50>;
+            key-positions = <38 39>;
+            bindings = <&kp LC(C)>;
+        };
+        combo_paste {
+            timeout-ms = <50>;
+            key-positions = <39 40>;
+            bindings = <&kp LC(V)>;
+        };
+        combo_back {
+            timeout-ms = <50>;
+            key-positions = <29 30>;
+            bindings = <&kp LC(Z)>;
+        };
+        combo_forward{
+            timeout-ms = <50>;
+            key-positions = <30 31>;
+            bindings = <&kp LC(LS(Z))>;
+        };
+    };
+};
 
 / {
     behaviors {
@@ -194,10 +247,10 @@
         symbol_layer {
             display-name = "SYMBOL";
             bindings = <
-&none    &kp SQT    &kp LT     &kp GT    &kp DQT      &kp GRAVE                       &msc SCRL_UP               &kp AMPS    &kp HASH    &kp LBKT    &kp RBKT    &kp PRCNT  &tog SYM
-&none    &kp EXCL   &kp MINUS  &kp PLUS  &kp EQUAL    &kp MINUS        &msc SCRL_DOWN &mkp LCLK  &msc SCRL_LEFT  &kp PIPE    &kp COLON   &kp LPAR    &kp RPAR    &kp QMARK  &none
-&trans   &kp CARET  &kp FSLH   &kp STAR  &kp BSLH     &kp UNDER   &trans              &msc SCRL_RIGHT            &kp TILDE   &kp DLLR    &kp LBRC    &kp RBRC    &kp AT     &trans
-                                  &trans    MO_TOG(NUM)  &trans                                                  &trans      &none       &trans
+&none    &kp SQT    &kp LT     &kp GT    &kp DQT      &kp GRAVE                       &msc SCRL_UP                &kp AMPS    &kp HASH    &kp LBKT    &kp RBKT    &kp PRCNT  &tog SYM
+&none    &kp EXCL   &kp MINUS  &kp PLUS  &kp EQUAL    &kp MINUS        &msc SCRL_LEFT &mkp LCLK  &msc SCRL_RIGHT  &kp PIPE    &kp COLON   &kp LPAR    &kp RPAR    &kp QMARK  &none
+&trans   &kp CARET  &kp FSLH   &kp STAR  &kp BSLH     &kp UNDER   &trans              &msc SCRL_DOWN              &kp TILDE   &kp DLLR    &kp LBRC    &kp RBRC    &kp AT     &trans
+                                  &trans    MO_TOG(NUM)  &trans                                                   &trans      &none       &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
