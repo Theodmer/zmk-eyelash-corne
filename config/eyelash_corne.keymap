@@ -70,47 +70,47 @@
         compatible = "zmk,combos";
         combo_dot {
             timeout-ms = <50>;
-            key-positions = <17 18>;
+            key-positions = <16 17>;
             bindings = <&kp DOT>;
         };
         combo_comma {
             timeout-ms = <50>;
-            key-positions = <24 25>;
+            key-positions = <23 24>;
             bindings = <&kp COMMA>;
         };
         combo_minus {
             timeout-ms = <50>;
-            key-positions = <16 17>;
+            key-positions = <15 16>;
             bindings = <&kp MINUS>;
         };
         combo_underscore {
             timeout-ms = <50>;
-            key-positions = <31 32>;
+            key-positions = <30 31>;
             bindings = <&kp UNDER>;
         };
         combo_cut {
             timeout-ms = <50>;
-            key-positions = <37 38>;
+            key-positions = <36 37>;
             bindings = <&kp LC(X)>;
         };
         combo_copy {
             timeout-ms = <50>;
-            key-positions = <38 39>;
+            key-positions = <37 38>;
             bindings = <&kp LC(C)>;
         };
         combo_paste {
             timeout-ms = <50>;
-            key-positions = <39 40>;
+            key-positions = <38 39>;
             bindings = <&kp LC(V)>;
         };
         combo_back {
             timeout-ms = <50>;
-            key-positions = <29 30>;
+            key-positions = <28 29>;
             bindings = <&kp LC(Z)>;
         };
         combo_forward{
             timeout-ms = <50>;
-            key-positions = <30 31>;
+            key-positions = <29 30>;
             bindings = <&kp LC(LS(Z))>;
         };
     };
