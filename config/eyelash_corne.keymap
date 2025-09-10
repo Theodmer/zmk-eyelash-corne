@@ -58,7 +58,6 @@
                 tapping-term-ms = <250>;
                 bindings = <&kp LALT>, <&kp LGUI>, <&kp LG(LALT)>;
         };
-p
         tdcaps: tap_dance_shift_caps {
                 compatible = "zmk,behavior-tap-dance";
                 #binding-cells = <0>;
@@ -66,7 +65,6 @@ p
                 bindings = <&kp LSHFT>, <&kp CAPS>;
         };
         
-
         tdbt: tap_dance_bluetooth {
                 compatible = "zmk,behavior-tap-dance";
                 #binding-cells = <0>;
