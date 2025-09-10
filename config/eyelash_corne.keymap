@@ -4,6 +4,7 @@
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <behaviors.dtsi>
+#include <behaviors/non_overlap.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
@@ -22,6 +23,27 @@
 #define CTRL(keycode) &ht_tp LG(keycode) LC(keycode)
 //======definitions========//
 
+//=========================//=========================/ Version: 1.0.3 /=========================//=========================//
+
+/ {
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        control_layer {
+            if-layers = <3 4>;
+            then-layer = <5>;
+        };
+        
+        control_layer_w {
+            if-layers = <1 5>;
+            then-layer = <6>;
+        };
+    };
+};
+
+&mt {
+    flavor = "tap-preferred";
+    tapping-term-ms = <240>;
+};
 
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
 
