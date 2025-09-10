@@ -246,23 +246,23 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
-- p: [17, 18]
-  k: {t: ., s: '>'}
-- p: [24, 25]
-  k: {t: ',', s: <}
 - p: [16, 17]
+  k: {t: ., s: '>'}
+- p: [23, 24]
+  k: {t: ',', s: <}
+- p: [15, 16]
   k: {h: '-', s: _}
-- p: [31, 32]
-  k: _
-- p: [37, 38]
-  k: Ctl+X
-- p: [38, 39]
-  k: Ctl+C
-- p: [39, 40]
-  k: Ctl+V
-- p: [29, 30]
-  k: Ctl+Z
 - p: [30, 31]
+  k: _
+- p: [36, 37]
+  k: Ctl+X
+- p: [37, 38]
+  k: Ctl+C
+- p: [38, 39]
+  k: Ctl+V
+- p: [28, 29]
+  k: Ctl+Z
+- p: [29, 30]
   k: Ctl+Sft+Z
 - p: [1, 15, 29]
   k: '&soft_off'
