@@ -17,7 +17,7 @@ manifest:
       revision: main
       import: app/west.yml
     - name: zmk-behavior-non-overlap
-+     remote: nguyendown
-+     revision: main
+      remote: nguyendown
+      revision: main
   self:
     path: config
