@@ -203,7 +203,7 @@ layers:
   - $$mdi:arrow-up-bold$$
   - Ctl+$$mdi:arrow-right-bold$$
   - '&tdbt'
-  - $$mdi:volume-high$$
+  - RGB HUI
   - $$mdi:bluetooth-off$$
   - $$mdi:brightness-7$$
   - $$mdi:volume-high$$
@@ -216,9 +216,9 @@ layers:
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:skip-previous$$
-  - $$mdi:play-pause$$
-  - $$mdi:skip-next$$
+  - RGB SPD
+  - RGB EFF
+  - RGB SPI
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:skip-previous$$
   - $$mdi:play-pause$$
@@ -232,7 +232,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - RGB TOG
-  - $$mdi:volume-low$$
+  - RGB HUD
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:volume-low$$
