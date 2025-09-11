@@ -60,7 +60,6 @@
 &soft_off { hold-time-ms = <2000>; };
 
 //==================== COMBOS ====================//
-
 / {
     combos {
         compatible = "zmk,combos";
@@ -98,31 +97,31 @@
             timeout-ms = <50>;
             key-positions = <36 37>;
             bindings = <&kp LC(X)>;
-            layers = <0 1 2 3 4>;
+            layers = <0 2 3 4>;
         };
         combo_copy {
             timeout-ms = <50>;
             key-positions = <37 38>;
             bindings = <&kp LC(C)>;
-            layers = <0 1 2 3 4>;
+            layers = <0 2 3 4>;
         };
         combo_paste {
             timeout-ms = <50>;
             key-positions = <38 39>;
             bindings = <&kp LC(V)>;
-            layers = <0 1 2 3 4>;
+            layers = <0 2 3 4>;
         };
         combo_back {
             timeout-ms = <50>;
             key-positions = <28 29>;
             bindings = <&kp LC(Z)>;
-            layers = <0 1 2 3 4>;
+            layers = <0 2 3 4>;
         };
         combo_forward{
             timeout-ms = <50>;
             key-positions = <29 30>;
             bindings = <&kp LC(LS(Z))>;
-            layers = <0 1 2 3 4>;
+            layers = <0 2 3 4>;
         };
         combo_cut_mac {
             timeout-ms = <50>;
