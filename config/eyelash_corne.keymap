@@ -273,7 +273,7 @@
             display-name = "GRAPHITE";
             bindings = <
 
-&kp TAB    &tdq      &kp L     &kp D     &kp W        &kp BSLH                            &kp UP                &kp FSLH  &kp F         AA(O)     AA(U)    &none     &kp ESC
+&kp TAB    &tdq      &kp L     &kp D     &kp W        &kp BSLH                            &kp UP                &kp FSLH  &kp F         AA(O)     AA(U)    &kp EQUAL &kp ESC
 &tdcaps    &kp N     &kp R     &kp T     AA(S)        AA(G)                      &kp LEFT &kp ENTER  &kp RIGHT  &kp Y     &kp H         AA(A)     &kp E    AA(I)     &tdcaps
 &kp LCTRL  &kp Q     &kp X     &kp M     AA(C)        &kp V            &kp SPACE          &kp DOWN              &kp K     &kp P         &kp B     &kp J    &kp Z     &mt RSFT RET
                                &tdw      MO_TOG(NUM)  &kp SPACE                                                 &blt      MO_TOG(SYM)   &kp RALT
