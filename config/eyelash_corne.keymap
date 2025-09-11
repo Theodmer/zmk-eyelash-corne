@@ -33,11 +33,6 @@
             if-layers = <2 3>;
             then-layer = <4>;
         };
-        
-        control_layer_w {
-            if-layers = <1 5>;
-            then-layer = <6>;
-        };
     };
 };
 
@@ -103,26 +98,31 @@
             timeout-ms = <50>;
             key-positions = <36 37>;
             bindings = <&kp LC(X)>;
+            layers = <GRA, QWERTY, NUM, SYM, CONTROL>;
         };
         combo_copy {
             timeout-ms = <50>;
             key-positions = <37 38>;
             bindings = <&kp LC(C)>;
+            layers = <GRA, QWERTY, NUM, SYM, CONTROL>;
         };
         combo_paste {
             timeout-ms = <50>;
             key-positions = <38 39>;
             bindings = <&kp LC(V)>;
+            layers = <GRA, QWERTY, NUM, SYM, CONTROL>;
         };
         combo_back {
             timeout-ms = <50>;
             key-positions = <28 29>;
             bindings = <&kp LC(Z)>;
+            layers = <GRA, QWERTY, NUM, SYM, CONTROL>;
         };
         combo_forward{
             timeout-ms = <50>;
             key-positions = <29 30>;
             bindings = <&kp LC(LS(Z))>;
+            layers = <GRA, QWERTY, NUM, SYM, CONTROL>;
         };
         combo_cut_mac {
             timeout-ms = <50>;
