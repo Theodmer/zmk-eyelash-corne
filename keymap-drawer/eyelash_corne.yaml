@@ -309,14 +309,19 @@ combos:
   k: _
 - p: [36, 37]
   k: Ctl+X
+  l: [GRAPHITE, QWERTY, NUMBER, SYMBOL, CONTROL]
 - p: [37, 38]
   k: Ctl+C
+  l: [GRAPHITE, QWERTY, NUMBER, SYMBOL, CONTROL]
 - p: [38, 39]
   k: Ctl+V
+  l: [GRAPHITE, QWERTY, NUMBER, SYMBOL, CONTROL]
 - p: [28, 29]
   k: Ctl+Z
+  l: [GRAPHITE, QWERTY, NUMBER, SYMBOL, CONTROL]
 - p: [29, 30]
   k: Ctl+Sft+Z
+  l: [GRAPHITE, QWERTY, NUMBER, SYMBOL, CONTROL]
 - p: [36, 37]
   k: {t: X, h: '$$mdi:apple-keyboard-command$$'}
   l: [MAC]
