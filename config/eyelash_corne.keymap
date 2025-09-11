@@ -79,6 +79,16 @@
             key-positions = <23 24>;
             bindings = <&kp COMMA>;
         };
+        combo_colon {
+            timeout-ms = <50>;
+            key-positions = <17 18>;
+            bindings = <&kp COLON>;
+        };
+        combo_semicolon {
+            timeout-ms = <50>;
+            key-positions = <22 23>;
+            bindings = <&kp SEMI>;
+        };
         combo_minus {
             timeout-ms = <50>;
             key-positions = <15 16>;
@@ -113,6 +123,36 @@
             timeout-ms = <50>;
             key-positions = <29 30>;
             bindings = <&kp LC(LS(Z))>;
+        };
+        combo_cut_mac {
+            timeout-ms = <50>;
+            key-positions = <36 37>;
+            bindings = <&kp LG(X)>;
+            layers = <MAC>;
+        };
+        combo_copy_mac {
+            timeout-ms = <50>;
+            key-positions = <37 38>;
+            bindings = <&kp LG(C)>;
+            layers = <MAC>;
+        };
+        combo_paste_mac {
+            timeout-ms = <50>;
+            key-positions = <38 39>;
+            bindings = <&kp LG(V)>;
+            layers = <MAC>;
+        };
+        combo_back_mac {
+            timeout-ms = <50>;
+            key-positions = <28 29>;
+            bindings = <&kp LG(Z)>;
+            layers = <MAC>;
+        };
+        combo_forward_mac{
+            timeout-ms = <50>;
+            key-positions = <29 30>;
+            bindings = <&kp LG(LS(Z))>;
+            layers = <MAC>;
         };
     };
 };
@@ -233,7 +273,7 @@
             display-name = "GRAPHITE";
             bindings = <
 
-&kp TAB    &tdq      &kp L     &kp D     &kp W        &ht_tp COMMA DOT                    &kp UP                &kp FSLH  &kp F         AA(O)     AA(U)    &kp SEMI  &kp ESC
+&kp TAB    &tdq      &kp L     &kp D     &kp W        &kp BSLH                            &kp UP                &kp FSLH  &kp F         AA(O)     AA(U)    &none     &kp ESC
 &tdcaps    &kp N     &kp R     &kp T     AA(S)        AA(G)                      &kp LEFT &kp ENTER  &kp RIGHT  &kp Y     &kp H         AA(A)     &kp E    AA(I)     &tdcaps
 &kp LCTRL  &kp Q     &kp X     &kp M     AA(C)        &kp V            &kp SPACE          &kp DOWN              &kp K     &kp P         &kp B     &kp J    &kp Z     &mt RSFT RET
                                &tdw      MO_TOG(NUM)  &kp SPACE                                                 &blt      MO_TOG(SYM)   &kp RALT
