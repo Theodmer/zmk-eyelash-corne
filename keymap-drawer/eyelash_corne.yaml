@@ -12,7 +12,7 @@ layers:
   - F
   - {t: O, h: AltGr+O}
   - {t: U, h: AltGr+U}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '=', s: +}
   - $$mdi:keyboard-esc$$
   - '&tdcaps'
   - N
