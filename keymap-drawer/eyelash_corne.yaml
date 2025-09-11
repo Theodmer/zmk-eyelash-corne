@@ -297,16 +297,22 @@ layers:
 combos:
 - p: [16, 17]
   k: {t: ., s: '>'}
+  l: [GRAPHITE, NUMBER, SYMBOL, CONTROL, MAC]
 - p: [23, 24]
   k: {t: ',', s: <}
+  l: [GRAPHITE, NUMBER, SYMBOL, CONTROL, MAC]
 - p: [17, 18]
   k: ':'
+  l: [GRAPHITE, NUMBER, SYMBOL, CONTROL, MAC]
 - p: [22, 23]
   k: {h: ;, s: ':'}
+  l: [GRAPHITE, NUMBER, SYMBOL, CONTROL, MAC]
 - p: [15, 16]
   k: {h: '-', s: _}
+  l: [GRAPHITE, NUMBER, SYMBOL, CONTROL, MAC]
 - p: [30, 31]
   k: _
+  l: [GRAPHITE, NUMBER, SYMBOL, CONTROL, MAC]
 - p: [36, 37]
   k: Ctl+X
   l: [GRAPHITE, NUMBER, SYMBOL, CONTROL]
