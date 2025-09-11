@@ -18,12 +18,13 @@
 #define NUM 2
 #define SYM 3
 #define CONTROL 4
+#define MAC 5
 
 #define MO_TOG(layer) &mo_tog layer layer
 #define AA(keycode) &ht_tp RA(keycode) keycode
 #define CTRL(keycode) &ht_tp LG(keycode) LC(keycode)
 
-//=========================//=========================/ Version: 2 /=========================//=========================//
+//=========================//=========================/ Version: 3 /=========================//=========================//
 
 / {
     conditional_layers {
@@ -116,6 +117,28 @@
     };
 };
 
+//================= MACROS =====================//
+/ {
+    macros {
+        swch_win: swch_win {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &bt BT_SEL 0>
+                , <&macro_tap &to GRA>
+                ;
+        };
+        swch_mac: swch_mac {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &bt BT_SEL 1>
+                , <&macro_tap &to MAC>
+                ;
+        };
+    };
+};
+
 / {
     behaviors {
 //==================== TAP DANCES ====================//
@@ -143,7 +166,7 @@
                 compatible = "zmk,behavior-tap-dance";
                 #binding-cells = <0>;
                 tapping-term-ms = <200>;
-                bindings = <&bt BT_SEL 0>, <&bt BT_SEL 1>, <&bt BT_SEL 2>;
+                bindings = <&swch_mac>, <&swch_win>;
         };
 
 //==================== HOLD TAPS ====================//
@@ -258,13 +281,25 @@
         control_layer {
             display-name = "CONTROL";
             bindings = <
-   &to QWERTY  &none  &kp LC(LEFT)  &kp UP    &kp LC(RIGHT)  &tdbt                                &rgb_ug RGB_HUI                  &bt BT_CLR &kp C_BRI_DEC  &kp C_VOL_UP  &none         &kp C_BRI_INC  &to GRA
-   &kp LSHFT   &none  &kp LEFT      &kp DOWN  &kp RIGHT      &none                &rgb_ug RGB_SPD &rgb_ug RGB_EFF &rgb_ug RGB_SPI  &none      &kp C_PREV     &kp C_PP      &kp C_NEXT    &none          &tog QWERTY
-   &kp LALT    &none  &none         &none     &none          &none     &rgb_ug RGB_TOG            &rgb_ug RGB_HUD                  &none      &none          &kp C_VOL_DN  &none         &none          &mt RSFT RET
-                                    &kp LCTRL &none          &trans                                                                &trans     &none          &trans
+   &to QWERTY  &none  &kp LC(LEFT)  &kp UP    &kp LC(RIGHT)  &tdbt                                &rgb_ug RGB_HUI                  &bt BT_CLR &none          &kp C_VOL_UP  &none      &kp C_BRI_INC &to GRA
+   &trans      &none  &kp LEFT      &kp DOWN  &kp RIGHT      &none                &rgb_ug RGB_SPD &rgb_ug RGB_EFF &rgb_ug RGB_SPI  &none      &kp C_PREV     &kp C_PP      &kp C_NEXT &kp C_BRI_DEC &to MAC
+   &trans      &none  &none         &none     &none          &none     &rgb_ug RGB_TOG            &rgb_ug RGB_HUD                  &none      &none          &kp C_VOL_DN  &none      &none         &trans
+                                    &trans    &none          &trans                                                                &trans     &none          &trans
             >;
 
             sensor-bindings = <&rgb_encoder>;
+        };
+
+        mac_layer {
+            display-name = "MAC";
+            bindings = <
+&trans    &trans  &trans  &trans  &trans  &trans           &trans         &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &trans  &trans  &trans  &trans  &trans    &trans &trans &trans  &trans  &trans  &trans  &trans  &trans  &trans  
+&kp LGUI  &trans  &trans  &trans  &trans  &trans  &trans   &trans         &trans  &trans  &trans  &trans  &trans  &trans
+                        &kp LALT  &trans  &trans                          &trans  &trans  &kp LCTRL
+            >;
+
+            sensor-bindings = <&trans>;
         };
     };
 };
