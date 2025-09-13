@@ -29,7 +29,7 @@
 / {
     conditional_layers {
         compatible = "zmk,conditional-layers";
-        function_layer {
+        funcion_layer {
             if-layers = <2 3>;
             then-layer = <4>;
         };
@@ -293,7 +293,7 @@
 &kp TAB    &tdq      &kp L     &kp D     &kp W        &kp BSLH                            &kp UP                &kp FSLH  &kp F         AA(O)     AA(U)    &kp EQUAL &kp ESC
 &tdcaps    &kp N     &kp R     &kp T     AA(S)        AA(G)                      &kp LEFT &kp ENTER  &kp RIGHT  &kp Y     &kp H         AA(A)     &kp E    AA(I)     &tdcaps
 &kp LGUI   &kp Q     &kp X     &kp M     AA(C)        &kp V            &kp C_PP           &kp DOWN              &kp K     &kp P         &kp B     &kp J    &kp Z     &mt RSFT RET
-                               &LALT     MO_TOG(NUM)  &kp SPACE                                                 &blt      &none   &kp LCTRL
+                               &LALT     MO_TOG(NUM)  &kp SPACE                                                 &kp BSPC  MO_TOG(CON)   &kp LCTRL
 
             >;
 
@@ -318,7 +318,7 @@
 &kp SQT  &kp LT     &kp LBKT  &kp RBKT  &kp GT    &kp CARET                        &mmv MOVE_UP              &kp AMPS   &kp N7        &kp N8  &kp N9  &none   &tog NUM
 &trans   &kp PRCNT  &kp LPAR  &kp RPAR  &kp PLUS  &kp HASH        &mmv MOVE_LEFT &mkp LCLK  &mmv MOVE_RIGHT  &kp PIPE   &kp N4        &kp N5  &kp N6  &kp N0  &trans
 &trans   &kp AT     &kp LBRC  &kp RBRC  &kp STAR  &kp DLLR   &trans                &mmv MOVE_DOWN            &kp TILDE  &kp N1        &kp N2  &kp N3  &none   &trans
-                              &trans    &none     &trans                                                     &trans     &none   &trans
+                              &trans    &none     &trans                                                     &trans     MO_TOG(CON)  &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
