@@ -18,7 +18,7 @@
 #define NUM 2
 #define SYM 3
 #define CONTROL 4
-#define MAC 5
+#define WIN 5
 
 #define MO_TOG(layer) &mo_tog layer layer
 #define AA(keycode) &ht_tp RA(keycode) keycode
@@ -65,26 +65,38 @@
         compatible = "zmk,combos";
         combo_dot {
             timeout-ms = <50>;
-            key-positions = <16 17>;
+            key-positions = <23 24>;
             bindings = <&kp DOT>;
             layers = <0 2 3 4 5>;
         };
         combo_comma {
             timeout-ms = <50>;
-            key-positions = <23 24>;
+            key-positions = <16 17>;
             bindings = <&kp COMMA>;
             layers = <0 2 3 4 5>;
         };
         combo_colon {
             timeout-ms = <50>;
-            key-positions = <17 18>;
+            key-positions = <22 23>;
             bindings = <&kp COLON>;
             layers = <0 2 3 4 5>;
         };
         combo_semicolon {
             timeout-ms = <50>;
-            key-positions = <22 23>;
+            key-positions = <17 18>;
             bindings = <&kp SEMI>;
+            layers = <0 2 3 4 5>;
+        };
+        combo_qmark {
+            timeout-ms = <50>;
+            key-positions = <9 10>;
+            bindings = <&kp QMARK>;
+            layers = <0 2 3 4 5>;
+        };
+        combo_exmark {
+            timeout-ms = <50>;
+            key-positions = <23 24>;
+            bindings = <&kp EXCL>;
             layers = <0 2 3 4 5>;
         };
         combo_minus {
@@ -103,61 +115,61 @@
             timeout-ms = <50>;
             key-positions = <36 37>;
             bindings = <&kp LC(X)>;
-            layers = <0 2 3 4>;
+            layers = <WIN>;
         };
         combo_copy {
             timeout-ms = <50>;
             key-positions = <37 38>;
             bindings = <&kp LC(C)>;
-            layers = <0 2 3 4>;
+            layers = <WIN>;
         };
         combo_paste {
             timeout-ms = <50>;
             key-positions = <38 39>;
             bindings = <&kp LC(V)>;
-            layers = <0 2 3 4>;
+            layers = <WIN>;
         };
         combo_back {
             timeout-ms = <50>;
             key-positions = <28 29>;
             bindings = <&kp LC(Z)>;
-            layers = <0 2 3 4>;
+            layers = <WIN>;
         };
         combo_forward{
             timeout-ms = <50>;
             key-positions = <29 30>;
             bindings = <&kp LC(LS(Z))>;
-            layers = <0 2 3 4>;
+            layers = <WIN>;
         };
         combo_cut_mac {
             timeout-ms = <50>;
             key-positions = <36 37>;
-            bindings = <&kp LG(X)>;
-            layers = <MAC>;
+            bindings = <&kp CTRL(X)>;
+            layers = <0 2 3 4>;
         };
         combo_copy_mac {
             timeout-ms = <50>;
             key-positions = <37 38>;
-            bindings = <&kp LG(C)>;
-            layers = <MAC>;
+            bindings = <&kp CTRL(C)>;
+            layers = <0 2 3 4>;
         };
         combo_paste_mac {
             timeout-ms = <50>;
             key-positions = <38 39>;
-            bindings = <&kp LG(V)>;
-            layers = <MAC>;
+            bindings = <&kp CTRL(V)>;
+            layers = <0 2 3 4>;
         };
         combo_back_mac {
             timeout-ms = <50>;
             key-positions = <28 29>;
-            bindings = <&kp LG(Z)>;
-            layers = <MAC>;
+            bindings = <&kp CTRL(Z)>;
+            layers = <0 2 3 4>;
         };
         combo_forward_mac{
             timeout-ms = <50>;
             key-positions = <29 30>;
-            bindings = <&kp LG(LS(Z))>;
-            layers = <MAC>;
+            bindings = <&kp CTRL(LS(Z))>;
+            layers = <0 2 3 4>;
         };
     };
 };
@@ -170,7 +182,7 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_tap &bt BT_SEL 0>
-                , <&macro_tap &to GRA>
+                , <&macro_tap &to WIN>
                 ;
         };
         swch_mac: swch_mac {
@@ -178,7 +190,7 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_tap &bt BT_SEL 1>
-                , <&macro_tap &to MAC>
+                , <&macro_tap &to GRA>
                 ;
         };
     };
@@ -211,7 +223,7 @@
                 compatible = "zmk,behavior-tap-dance";
                 #binding-cells = <0>;
                 tapping-term-ms = <200>;
-                bindings = <&swch_mac>, <&swch_win>;
+                bindings = <&swch_mac>, <&swch_win>, <&bt BT_SEL 2>;
         };
 
 //==================== HOLD TAPS ====================//
@@ -280,8 +292,8 @@
 
 &kp TAB    &tdq      &kp L     &kp D     &kp W        &kp BSLH                            &kp UP                &kp FSLH  &kp F         AA(O)     AA(U)    &kp EQUAL &kp ESC
 &tdcaps    &kp N     &kp R     &kp T     AA(S)        AA(G)                      &kp LEFT &kp ENTER  &kp RIGHT  &kp Y     &kp H         AA(A)     &kp E    AA(I)     &tdcaps
-&kp LCTRL  &kp Q     &kp X     &kp M     AA(C)        &kp V            &kp SPACE          &kp DOWN              &kp K     &kp P         &kp B     &kp J    &kp Z     &mt RSFT RET
-                               &tdw      MO_TOG(NUM)  &kp SPACE                                                 &blt      MO_TOG(SYM)   &kp RALT
+&kp LGUI   &kp Q     &kp X     &kp M     AA(C)        &kp V            &kp C_PP           &kp DOWN              &kp K     &kp P         &kp B     &kp J    &kp Z     &mt RSFT RET
+                               &LALT     MO_TOG(NUM)  &kp SPACE                                                 &blt      MO_TOG(SYM)   &kp LCTRL
 
             >;
 
@@ -335,13 +347,13 @@
             sensor-bindings = <&rgb_encoder>;
         };
 
-        mac_layer {
-            display-name = "MAC";
+        win_layer {
+            display-name = "WIN";
             bindings = <
 &trans    &trans  &trans  &trans  &trans  &trans           &trans         &trans  &trans  &trans  &trans  &trans  &trans
 &trans    &trans  &trans  &trans  &trans  &trans    &trans &trans &trans  &trans  &trans  &trans  &trans  &trans  &trans  
-&kp LGUI  &trans  &trans  &trans  &trans  &trans  &trans   &trans         &trans  &trans  &trans  &trans  &trans  &trans
-                        &kp LALT  &trans  &trans                          &trans  &trans  &kp LCTRL
+&kp LCTRL &trans  &trans  &trans  &trans  &trans  &trans   &trans         &trans  &trans  &trans  &trans  &trans  &trans
+                          &tdw    &trans  &trans                          &trans  &trans  &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
