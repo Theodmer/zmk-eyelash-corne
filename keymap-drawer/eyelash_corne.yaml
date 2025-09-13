@@ -142,17 +142,17 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: CON, h: CON}
   - {t: '$$mdi:transfer$$', type: trans}
   CON:
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Alt+$$mdi:arrow-left-bold$$
   - $$mdi:arrow-up-bold$$
   - Alt+$$mdi:arrow-right-bold$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:pan-up$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -160,12 +160,12 @@ layers:
   - $$mdi:volume-high$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - BRI INC
+  - {t: CON, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:pan-left$$
   - $$mdi:mouse-scroll-wheel$$
@@ -191,10 +191,10 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
+  - {t: NUMBER, h: NUMBER, type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   FN:
   - F1
