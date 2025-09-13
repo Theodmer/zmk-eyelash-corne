@@ -114,60 +114,30 @@
         combo_cut {
             timeout-ms = <50>;
             key-positions = <36 37>;
-            bindings = <&kp LC(X)>;
-            layers = <WIN>;
-        };
-        combo_copy {
-            timeout-ms = <50>;
-            key-positions = <37 38>;
-            bindings = <&kp LC(C)>;
-            layers = <WIN>;
-        };
-        combo_paste {
-            timeout-ms = <50>;
-            key-positions = <38 39>;
-            bindings = <&kp LC(V)>;
-            layers = <WIN>;
-        };
-        combo_back {
-            timeout-ms = <50>;
-            key-positions = <28 29>;
-            bindings = <&kp LC(Z)>;
-            layers = <WIN>;
-        };
-        combo_forward{
-            timeout-ms = <50>;
-            key-positions = <29 30>;
-            bindings = <&kp LC(LS(Z))>;
-            layers = <WIN>;
-        };
-        combo_cut_mac {
-            timeout-ms = <50>;
-            key-positions = <36 37>;
             bindings = <CTRL(X)>;
             layers = <0 2 3 4>;
         };
-        combo_copy_mac {
+        combo_copy {
             timeout-ms = <50>;
             key-positions = <37 38>;
             bindings = <CTRL(C)>;
             layers = <0 2 3 4>;
         };
-        combo_paste_mac {
+        combo_paste {
             timeout-ms = <50>;
             key-positions = <38 39>;
             bindings = <CTRL(V)>;
             layers = <0 2 3 4>;
         };
-        combo_back_mac {
+        combo_back {
             timeout-ms = <50>;
-            key-positions = <28 29>;
+            key-positions = <0 1>;
             bindings = <CTRL(Z)>;
             layers = <0 2 3 4>;
         };
-        combo_forward_mac{
+        combo_forward{
             timeout-ms = <50>;
-            key-positions = <29 30>;
+            key-positions = <1 2>;
             bindings = <CTRL(LS(Z))>;
             layers = <0 2 3 4>;
         };
