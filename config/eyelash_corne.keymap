@@ -144,31 +144,31 @@
         combo_cut_mac {
             timeout-ms = <50>;
             key-positions = <36 37>;
-            bindings = <&kp CTRL(X)>;
+            bindings = <CTRL(X)>;
             layers = <0 2 3 4>;
         };
         combo_copy_mac {
             timeout-ms = <50>;
             key-positions = <37 38>;
-            bindings = <&kp CTRL(C)>;
+            bindings = <CTRL(C)>;
             layers = <0 2 3 4>;
         };
         combo_paste_mac {
             timeout-ms = <50>;
             key-positions = <38 39>;
-            bindings = <&kp CTRL(V)>;
+            bindings = <CTRL(V)>;
             layers = <0 2 3 4>;
         };
         combo_back_mac {
             timeout-ms = <50>;
             key-positions = <28 29>;
-            bindings = <&kp CTRL(Z)>;
+            bindings = <CTRL(Z)>;
             layers = <0 2 3 4>;
         };
         combo_forward_mac{
             timeout-ms = <50>;
             key-positions = <29 30>;
-            bindings = <&kp CTRL(LS(Z))>;
+            bindings = <CTRL(LS(Z))>;
             layers = <0 2 3 4>;
         };
     };
