@@ -320,21 +320,6 @@ combos:
   k: _
   l: [GRAPHITE, NUMBER, CON, FN, WIN]
 - p: [36, 37]
-  k: Ctl+X
-  l: [WIN]
-- p: [37, 38]
-  k: Ctl+C
-  l: [WIN]
-- p: [38, 39]
-  k: Ctl+V
-  l: [WIN]
-- p: [28, 29]
-  k: Ctl+Z
-  l: [WIN]
-- p: [29, 30]
-  k: Ctl+Sft+Z
-  l: [WIN]
-- p: [36, 37]
   k: {t: X, h: Ctl+X}
   l: [GRAPHITE, NUMBER, CON, FN]
 - p: [37, 38]
@@ -343,10 +328,10 @@ combos:
 - p: [38, 39]
   k: {t: V, h: Ctl+V}
   l: [GRAPHITE, NUMBER, CON, FN]
-- p: [28, 29]
+- p: [0, 1]
   k: {t: Z, h: Ctl+Z}
   l: [GRAPHITE, NUMBER, CON, FN]
-- p: [29, 30]
+- p: [1, 2]
   k: {t: Gui+Sft+Z, h: Ctl+Sft+Z}
   l: [GRAPHITE, NUMBER, CON, FN]
 - p: [1, 15, 29]
