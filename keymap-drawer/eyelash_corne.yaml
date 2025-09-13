@@ -295,6 +295,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-option$$
 combos:
+- p: [1, 15, 29]
+  k: '&soft_off'
 - p: [23, 24]
   k: {t: ., s: '>'}
   l: [GRAPHITE, NUMBER, CON, FN, WIN]
@@ -321,18 +323,16 @@ combos:
   l: [GRAPHITE, NUMBER, CON, FN, WIN]
 - p: [36, 37]
   k: {t: X, h: Ctl+X}
-  l: [GRAPHITE, NUMBER, CON, FN]
+  l: [GRAPHITE, NUMBER, CON, FN, WIN]
 - p: [37, 38]
   k: {t: C, h: Ctl+C}
-  l: [GRAPHITE, NUMBER, CON, FN]
+  l: [GRAPHITE, NUMBER, CON, FN, WIN]
 - p: [38, 39]
   k: {t: V, h: Ctl+V}
-  l: [GRAPHITE, NUMBER, CON, FN]
+  l: [GRAPHITE, NUMBER, CON, FN, WIN]
 - p: [0, 1]
   k: {t: Z, h: Ctl+Z}
-  l: [GRAPHITE, NUMBER, CON, FN]
+  l: [GRAPHITE, NUMBER, CON, FN, WIN]
 - p: [1, 2]
   k: {t: Gui+Sft+Z, h: Ctl+Sft+Z}
-  l: [GRAPHITE, NUMBER, CON, FN]
-- p: [1, 15, 29]
-  k: '&soft_off'
+  l: [GRAPHITE, NUMBER, CON, FN, WIN]
