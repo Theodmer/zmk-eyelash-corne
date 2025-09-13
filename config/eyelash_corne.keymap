@@ -342,7 +342,7 @@
    &kp F1      &kp F2  &kp F3  &kp F4   &kp F5   &kp F6                                 &rgb_ug RGB_HUI                    &tdbt   &none  &none  &none  &none  &to GRA
    &kp F7      &kp F8  &kp F9  &kp F10  &kp F11  &kp F12                &rgb_ug RGB_SPD &rgb_ug RGB_EFF &rgb_ug RGB_SPI    &none   &none  &none  &none  &none  &to QWERTY
    &bt BT_CLR  &none   &none   &none    &none    &none     &rgb_ug RGB_TOG              &rgb_ug RGB_HUD                    &none   &none  &none  &none  &none  &to WIN
-                               &trans    &none   &trans                                                                    &trans  &none  &trans
+                               &trans   &trans   &trans                                                                    &trans  &trans  &trans
             >;
 
             sensor-bindings = <&rgb_encoder>;
