@@ -335,19 +335,19 @@ combos:
   k: Ctl+Sft+Z
   l: [WIN]
 - p: [36, 37]
-  k: {t: Ctl+X, h: X}
+  k: {t: X, h: Ctl+X}
   l: [GRAPHITE, NUMBER, CON, FN]
 - p: [37, 38]
-  k: {t: Ctl+C, h: C}
+  k: {t: C, h: Ctl+C}
   l: [GRAPHITE, NUMBER, CON, FN]
 - p: [38, 39]
-  k: {t: Ctl+V, h: V}
+  k: {t: V, h: Ctl+V}
   l: [GRAPHITE, NUMBER, CON, FN]
 - p: [28, 29]
-  k: {t: Ctl+Z, h: Z}
+  k: {t: Z, h: Ctl+Z}
   l: [GRAPHITE, NUMBER, CON, FN]
 - p: [29, 30]
-  k: {t: Ctl+Sft+Z, h: Gui+Sft+Z}
+  k: {t: Gui+Sft+Z, h: Ctl+Sft+Z}
   l: [GRAPHITE, NUMBER, CON, FN]
 - p: [1, 15, 29]
   k: '&soft_off'
