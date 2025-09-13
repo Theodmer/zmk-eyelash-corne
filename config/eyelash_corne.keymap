@@ -327,10 +327,10 @@
         control_layer {
             display-name = "CON";
             bindings = <
-   &trans  &kp LALT(LEFT)  &kp UP    &kp LALT(RIGHT)  &none  &none                                &msc SCRL_UP                    &none   &none       &kp C_VOL_UP  &none       &kp C_BRI_INC &trans
-   &trans  &kp LEFT        &kp DOWN  &kp RIGHT        &none  &none                &msc SCRL_LEFT  &mkp MCLK     &msc SCRL_RIGHT   &none   &kp C_PREV  &kp C_PP      &kp C_NEXT  &kp C_BRI_DEC &trans
-   &trans  &none           &none     &none            &none  &none     &rgb_ug RGB_TOG            &msc SCRL_DOWN                  &none   &none       &kp C_VOL_DN  &none       &none         &trans
-                                     &trans           &none  &trans                                                               &trans  &none       &trans
+   &trans  &kp LA(LEFT)  &kp UP    &kp LA(RIGHT)  &none  &none                                &msc SCRL_UP                    &none   &none       &kp C_VOL_UP  &none       &kp C_BRI_INC &trans
+   &trans  &kp LEFT      &kp DOWN  &kp RIGHT      &none  &none                &msc SCRL_LEFT  &mkp MCLK     &msc SCRL_RIGHT   &none   &kp C_PREV  &kp C_PP      &kp C_NEXT  &kp C_BRI_DEC &trans
+   &trans  &none         &none     &none          &none  &none     &rgb_ug RGB_TOG            &msc SCRL_DOWN                  &none   &none       &kp C_VOL_DN  &none       &none         &trans
+                                   &trans         &none  &trans                                                               &trans  &none       &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
