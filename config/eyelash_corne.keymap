@@ -63,6 +63,12 @@
 / {
     combos {
         compatible = "zmk,combos";
+
+        softoff {
+            bindings = <&soft_off>;
+            key-positions = <1 15 29>;
+        };
+
         combo_dot {
             timeout-ms = <50>;
             key-positions = <23 24>;
@@ -115,31 +121,31 @@
             timeout-ms = <50>;
             key-positions = <36 37>;
             bindings = <CTRL(X)>;
-            layers = <0 2 3 4>;
+            layers = <0 2 3 4 5>;
         };
         combo_copy {
             timeout-ms = <50>;
             key-positions = <37 38>;
             bindings = <CTRL(C)>;
-            layers = <0 2 3 4>;
+            layers = <0 2 3 4 5>;
         };
         combo_paste {
             timeout-ms = <50>;
             key-positions = <38 39>;
             bindings = <CTRL(V)>;
-            layers = <0 2 3 4>;
+            layers = <0 2 3 4 5>;
         };
         combo_back {
             timeout-ms = <50>;
             key-positions = <0 1>;
             bindings = <CTRL(Z)>;
-            layers = <0 2 3 4>;
+            layers = <0 2 3 4 5>;
         };
         combo_forward{
             timeout-ms = <50>;
             key-positions = <1 2>;
             bindings = <CTRL(LS(Z))>;
-            layers = <0 2 3 4>;
+            layers = <0 2 3 4 5>;
         };
     };
 };
@@ -221,7 +227,6 @@
                 bindings = <&kp BSPC>, <&kp DEL>;
                 mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-//=============----------new ones-----------==================
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
             display-name = "Shift/Caps Lock Tap Dance";
@@ -230,6 +235,7 @@
         };
     };
 
+//==================== ENCODERS ====================//
     rgb_encoder: rgb_encoder {
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
@@ -244,15 +250,7 @@
         tap-ms = <100>;
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        softoff {
-            bindings = <&soft_off>;
-            key-positions = <1 15 29>;
-        };
-    };
-
+//============================== KEYMAP ==============================//
     keymap {
         compatible = "zmk,keymap";
 
