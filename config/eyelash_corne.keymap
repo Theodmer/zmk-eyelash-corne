@@ -22,7 +22,7 @@
 
 #define MO_TOG(layer) &mo_tog layer layer
 #define AA(keycode) &ht_tp RA(keycode) keycode
-#define CTRL(keycode) &ht_tp LG(keycode) LC(keycode)
+#define CTRL(keycode) &ht_tp LC(keycode) LG(keycode)
 
 //=========================//=========================/ Version: 4 /=========================//=========================//
 
