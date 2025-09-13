@@ -293,7 +293,7 @@
 &kp TAB    &tdq      &kp L     &kp D     &kp W        &kp BSLH                            &kp UP                &kp FSLH  &kp F         AA(O)     AA(U)    &kp EQUAL &kp ESC
 &tdcaps    &kp N     &kp R     &kp T     AA(S)        AA(G)                      &kp LEFT &kp ENTER  &kp RIGHT  &kp Y     &kp H         AA(A)     &kp E    AA(I)     &tdcaps
 &kp LGUI   &kp Q     &kp X     &kp M     AA(C)        &kp V            &kp C_PP           &kp DOWN              &kp K     &kp P         &kp B     &kp J    &kp Z     &mt RSFT RET
-                               &LALT     MO_TOG(NUM)  &kp SPACE                                                 &kp BSPC  MO_TOG(CON)   &kp LCTRL
+                               &kp LALT  MO_TOG(NUM)  &kp SPACE                                                 &blt      MO_TOG(CON)   &kp LCTRL
 
             >;
 
