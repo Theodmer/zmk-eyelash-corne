@@ -43,10 +43,10 @@ layers:
   - J
   - Z
   - {t: '$$mdi:keyboard-return$$', h: RSFT}
-  - '&LALT'
+  - $$mdi:apple-keyboard-option$$
   - {t: NUMBER, h: NUMBER}
   - $$mdi:keyboard-space$$
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse-outline$$'}
   - {t: CON, h: CON}
   - $$mdi:apple-keyboard-control$$
   QWERTY:
