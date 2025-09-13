@@ -240,10 +240,10 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: WIN, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   WIN:
   - {t: '$$mdi:transfer$$', type: trans}
