@@ -149,9 +149,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   CON:
   - {t: '$$mdi:transfer$$', type: trans}
-  - LALT(LEFT)
+  - Alt+$$mdi:arrow-left-bold$$
   - $$mdi:arrow-up-bold$$
-  - LALT(RIGHT)
+  - Alt+$$mdi:arrow-right-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:pan-up$$
