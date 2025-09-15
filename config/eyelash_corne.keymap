@@ -250,7 +250,7 @@
 &tdctrl    &kp Q     &kp X     &kp M     &kp C        &kp V            &kp C_PP           &kp DOWN              &kp K     &kp P         &kp B     &kp J    &kp Z     &mt RALT RET
                                &kp LALT  MO_TOG(NUM)  &kp SPACE                                                 &blt      MO_TOG(CON)   &kp LCTRL
 
-            >
+            >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
