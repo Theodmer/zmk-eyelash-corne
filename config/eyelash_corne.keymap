@@ -145,7 +145,7 @@
             timeout-ms = <50>;
             key-positions = <1 2>;
             bindings = <CTRL(LS(Z))>;
-            layers = <0 2 3 4 5>;
+            layers = <0 2 3 4>;
         };
     };
 };
