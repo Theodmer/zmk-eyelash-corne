@@ -302,16 +302,5 @@
 
             sensor-bindings = <&rgb_encoder>;
         };
-        win_layer {
-            display-name = "WIN";
-            bindings = <
-&trans    &trans  &trans  &trans  &trans  &trans           &trans         &trans  &trans  &trans  &trans  &trans  &trans
-&trans    &trans  &trans  &trans  &trans  &trans    &trans &trans &trans  &trans  &trans  &trans  &trans  &trans  &trans  
-&kp LCTRL &trans  &trans  &trans  &trans  &trans  &trans   &trans         &trans  &trans  &trans  &trans  &trans  &trans
-                          &tdw    &trans  &trans                          &trans  &trans  &kp RALT
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
-        };
     };
 };
