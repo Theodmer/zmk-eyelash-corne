@@ -10,30 +10,30 @@ layers:
   - $$mdi:arrow-up-bold$$
   - {t: /, s: '?'}
   - F
-  - {t: O, h: AltGr+O}
-  - {t: U, h: AltGr+U}
+  - O
+  - U
   - {t: '=', s: +}
   - $$mdi:keyboard-esc$$
   - '&tdcaps'
   - N
   - R
   - T
-  - {t: S, h: AltGr+S}
-  - {t: G, h: AltGr+G}
+  - S
+  - G
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-right-bold$$
   - Y
   - H
-  - {t: A, h: AltGr+A}
+  - A
   - E
-  - {t: I, h: AltGr+I}
+  - I
   - '&tdcaps'
-  - LGUI
+  - '&tdctrl'
   - Q
   - X
   - M
-  - {t: C, h: AltGr+C}
+  - C
   - V
   - $$mdi:play-pause$$
   - $$mdi:arrow-down-bold$$
@@ -42,7 +42,7 @@ layers:
   - B
   - J
   - Z
-  - {t: '$$mdi:keyboard-return$$', h: RSFT}
+  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-option$$'}
   - $$mdi:apple-keyboard-option$$
   - {t: NUMBER, h: NUMBER}
   - $$mdi:keyboard-space$$
@@ -238,7 +238,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: WIN, h: toggle}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -297,42 +297,43 @@ layers:
 combos:
 - p: [1, 15, 29]
   k: '&soft_off'
+  l: [GRAPHITE, NUMBER, CON, FN]
 - p: [23, 24]
   k: {t: ., s: '>'}
-  l: [GRAPHITE, NUMBER, CON, FN, WIN]
+  l: [GRAPHITE, NUMBER, CON, FN]
 - p: [16, 17]
   k: {t: ',', s: <}
-  l: [GRAPHITE, NUMBER, CON, FN, WIN]
+  l: [GRAPHITE, NUMBER, CON, FN]
 - p: [22, 23]
   k: ':'
-  l: [GRAPHITE, NUMBER, CON, FN, WIN]
+  l: [GRAPHITE, NUMBER, CON, FN]
 - p: [17, 18]
   k: {h: ;, s: ':'}
-  l: [GRAPHITE, NUMBER, CON, FN, WIN]
+  l: [GRAPHITE, NUMBER, CON, FN]
 - p: [9, 10]
   k: '?'
-  l: [GRAPHITE, NUMBER, CON, FN, WIN]
-- p: [23, 24]
+  l: [GRAPHITE, NUMBER, CON, FN]
+- p: [24, 25]
   k: '!'
-  l: [GRAPHITE, NUMBER, CON, FN, WIN]
+  l: [GRAPHITE, NUMBER, CON, FN]
 - p: [15, 16]
   k: {h: '-', s: _}
-  l: [GRAPHITE, NUMBER, CON, FN, WIN]
+  l: [GRAPHITE, NUMBER, CON, FN]
 - p: [30, 31]
   k: _
-  l: [GRAPHITE, NUMBER, CON, FN, WIN]
+  l: [GRAPHITE, NUMBER, CON, FN]
 - p: [36, 37]
   k: {t: X, h: Ctl+X}
-  l: [GRAPHITE, NUMBER, CON, FN, WIN]
+  l: [GRAPHITE, NUMBER, CON, FN]
 - p: [37, 38]
   k: {t: C, h: Ctl+C}
-  l: [GRAPHITE, NUMBER, CON, FN, WIN]
+  l: [GRAPHITE, NUMBER, CON, FN]
 - p: [38, 39]
   k: {t: V, h: Ctl+V}
-  l: [GRAPHITE, NUMBER, CON, FN, WIN]
+  l: [GRAPHITE, NUMBER, CON, FN]
 - p: [0, 1]
   k: {t: Z, h: Ctl+Z}
-  l: [GRAPHITE, NUMBER, CON, FN, WIN]
+  l: [GRAPHITE, NUMBER, CON, FN]
 - p: [1, 2]
   k: {t: Gui+Sft+Z, h: Ctl+Sft+Z}
   l: [GRAPHITE, NUMBER, CON, FN, WIN]
