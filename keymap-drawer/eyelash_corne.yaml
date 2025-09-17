@@ -99,7 +99,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   NUMBER:
-  - {t: '''', s: '"'}
+  - {t: '`', s: '~'}
   - <
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
@@ -182,7 +182,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - RGB TOG
+  - $$mdi:play-pause$$
   - $$mdi:pan-down$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -249,16 +249,16 @@ combos:
 - p: [1, 15, 29]
   k: '&soft_off'
   l: [GRAPHITE, NUMBER, CON, FN]
-- p: [23, 24]
+- p: [16, 17]
   k: {t: ., s: '>'}
   l: [GRAPHITE, NUMBER, CON, FN]
-- p: [16, 17]
+- p: [23, 24]
   k: {t: ',', s: <}
   l: [GRAPHITE, NUMBER, CON, FN]
-- p: [22, 23]
+- p: [3, 4]
   k: ':'
   l: [GRAPHITE, NUMBER, CON, FN]
-- p: [17, 18]
+- p: [8, 9]
   k: {h: ;, s: ':'}
   l: [GRAPHITE, NUMBER, CON, FN]
 - p: [9, 10]
