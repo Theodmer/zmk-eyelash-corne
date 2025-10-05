@@ -45,8 +45,8 @@ layers:
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-option$$'}
   - $$mdi:apple-keyboard-option$$
   - {t: NUMBER, h: NUMBER}
-  - $$mdi:keyboard-space$$
   - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse-outline$$'}
+  - $$mdi:keyboard-space$$
   - {t: CON, h: CON}
   - $$mdi:apple-keyboard-control$$
   QWERTY:
