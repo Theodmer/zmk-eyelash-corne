@@ -248,7 +248,7 @@
 &kp TAB    &tdq      &kp L     &kp D     &kp W        &kp BSLH                            &kp UP                &kp FSLH  &kp F         &kp O     &kp U    &kp EQUAL &kp ESC
 &tdcaps    &kp N     &kp R     &kp T     &kp S        &kp G                      &kp LEFT &kp ENTER  &kp RIGHT  &kp Y     &kp H         &kp A     &kp E    &kp I     &tdcaps
 &tdctrl    &kp Q     &kp X     &kp M     &kp C        &kp V            &kp C_PP           &kp DOWN              &kp K     &kp P         &kp B     &kp J    &kp Z     &mt RALT RET
-                               &kp LALT  MO_TOG(NUM)  &kp SPACE                                                 &blt      MO_TOG(CON)   &kp LCTRL
+                               &kp LALT  MO_TOG(NUM)  &blt                                              &kp SPACE    MO_TOG(CON)   &kp LCTRL
 
             >;
 
